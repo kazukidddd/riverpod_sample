@@ -1,2 +1,3 @@
 # riverpod_sample
-riverpodのサンプルリポジトリ
+
+riverpod のサンプルアプリになります。
