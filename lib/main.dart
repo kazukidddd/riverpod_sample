@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_sample/address_screen.dart';
+import 'package:riverpod_sample/zip_input_screen.dart';
 
 void main() {
   runApp(
@@ -56,10 +56,10 @@ class SampleWidget extends ConsumerWidget {
               onPressed: () => Navigator.push<dynamic>(
                 context,
                 MaterialPageRoute<dynamic>(
-                  builder: (context) => const AddressScreen(),
+                  builder: (context) => const ZipInputScreen(),
                 ),
               ),
-              child: const Text('AddressScreen'),
+              child: const Text('ZipInputScreen'),
             ),
           ],
         ),
