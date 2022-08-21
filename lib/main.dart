@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_sample/zip_input_screen.dart';
 
 void main() {
   runApp(
@@ -47,7 +48,21 @@ class SampleWidget extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('ExampleScreen')),
       body: Center(
-        child: Text('count is ${count.aa}'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('count is ${count.aa}'),
+            ElevatedButton(
+              onPressed: () => Navigator.push<dynamic>(
+                context,
+                MaterialPageRoute<dynamic>(
+                  builder: (context) => const ZipInputScreen(),
+                ),
+              ),
+              child: const Text('ZipInputScreen'),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
